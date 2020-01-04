@@ -80,3 +80,11 @@ user_pref("browser.uitour.enabled", false);
 // SETTING: Disable beacon, which sends additional analytics data
 // https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon
 user_pref("beacon.enabled", false);
+
+
+// SETTING: Enable Firefox Tracking Protection
+// https://wiki.mozilla.org/Security/Tracking_protection
+// https://support.mozilla.org/en-US/kb/tracking-protection-firefox
+// https://support.mozilla.org/en-US/kb/tracking-protection-pbm
+user_pref("privacy.trackingprotection.enabled", true);
+user_pref("privacy.trackingprotection.pbmode.enabled", true);
