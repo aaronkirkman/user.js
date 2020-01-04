@@ -17,3 +17,8 @@ user_pref("geo.enabled", false);
 // SETTING: When set to false, this setting prevents invalid URLs entered into the address bar from being submitted to the default search engine.
 // http://kb.mozillazine.org/Keyword.enabled
 user_pref("keyword.enabled", true);
+
+// SETTING: Enable Firefox's anti-fingerprinting mode ("resist fingerprinting" or RFP) (Tor Uplift project)
+// https://wiki.mozilla.org/Security/Fingerprinting
+// NOTE: This spoofs the time zone, the locale, and disables numerous other browser features
+user_pref("privacy.resistFingerprinting", true);
