@@ -9,6 +9,11 @@ user_pref("dom.enable_user_timing",	false);
 user_pref("dom.enable_performance", false);
 
 
+// SETTING: Disable geolocation, i.e. Location-Aware Browsing
+// https://www.mozilla.org/en-US/firefox/geolocation/
+user_pref("geo.enabled", false);
+
+
 // SETTING: When set to false, this setting prevents invalid URLs entered into the address bar from being submitted to the default search engine.
 // http://kb.mozillazine.org/Keyword.enabled
 user_pref("keyword.enabled", true);
