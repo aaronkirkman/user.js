@@ -3,6 +3,11 @@
 // https://www.w3.org/TR/2013/REC-user-timing-20131212/#privacy-security
 user_pref("dom.enable_user_timing",	false);
 
+// SETTING: Disable DOM Timing API
+// https://wiki.mozilla.org/Security/Reviews/Firefox/NavigationTimingAPI
+// https://www.w3.org/TR/navigation-timing/#privacy
+user_pref("dom.enable_performance", false);
+
 
 // SETTING: When set to false, this setting prevents invalid URLs entered into the address bar from being submitted to the default search engine.
 // http://kb.mozillazine.org/Keyword.enabled
