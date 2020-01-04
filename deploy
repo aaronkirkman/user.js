@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+prof=$(grep -e "\[Profile0\]" -A 3 ~/.mozilla/firefox/profiles.ini | tail -n 1 | sed -e 's/Path=//g')
+cp user.js ~/.mozilla/firefox/${prof}/user.js -v
