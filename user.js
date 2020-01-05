@@ -5,7 +5,7 @@ user_pref("general.warnOnAboutConfig", false);
 // SETTING: Disable User Timing API, which stores high-resolution (milliseconds to microseconds) timestamps
 // https://trac.torproject.org/projects/tor/ticket/16336
 // https://www.w3.org/TR/2013/REC-user-timing-20131212/#privacy-security
-user_pref("dom.enable_user_timing",	false);
+user_pref("dom.enable_user_timing", false);
 
 
 // SETTING: Disable DOM Timing API
@@ -70,7 +70,7 @@ user_pref("beacon.enabled", false);
 
 
 /******************************************************************************
- * SECTION: Firefox features and components                         *
+ * SECTION: Firefox features and components                                   *
  ******************************************************************************/
 
 
@@ -78,11 +78,11 @@ user_pref("beacon.enabled", false);
 // https://wiki.mozilla.org/Security/Fingerprinting
 // NOTE: This spoofs the time zone, the locale, and disables numerous other browser features
 // NOTE: This supersedes some other spoofing settings, e.g.:
-//		user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; rv:60.0) Gecko/20100101 Firefox/60.0";
-//		user_pref("general.appname.override",	"Netscape");
-//		user_pref("general.appversion.override", "5.0 (Windows)");
-//		user_pref("general.platform.override", "Win32");
-//		user_pref("general.oscpu.override", "Windows NT 6.1");
+//user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; rv:60.0) Gecko/20100101 Firefox/60.0";
+//user_pref("general.appname.override",	"Netscape");
+//user_pref("general.appversion.override", "5.0 (Windows)");
+//user_pref("general.platform.override", "Win32");
+//user_pref("general.oscpu.override", "Windows NT 6.1");
 user_pref("privacy.resistFingerprinting", true);
 
 
