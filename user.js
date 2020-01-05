@@ -97,3 +97,8 @@ user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("experiments.supported", false);
 user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
+
+// SETTING: Disable recommended extensions
+// https://support.mozilla.org/en-US/kb/extension-recommendations
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false)
