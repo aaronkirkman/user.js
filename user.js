@@ -24,16 +24,7 @@ user_pref("geo.enabled", false);
 user_pref("keyword.enabled", true);
 
 
-// SETTING: Enable Firefox's anti-fingerprinting mode ("resist fingerprinting" or RFP) (Tor Uplift project)
-// https://wiki.mozilla.org/Security/Fingerprinting
-// NOTE: This spoofs the time zone, the locale, and disables numerous other browser features
-// NOTE: This supersedes some other spoofing settings, e.g.:
-//		user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; rv:60.0) Gecko/20100101 Firefox/60.0";
-//		user_pref("general.appname.override",	"Netscape");
-//		user_pref("general.appversion.override", "5.0 (Windows)");
-//		user_pref("general.platform.override", "Win32");
-//		user_pref("general.oscpu.override", "Windows NT 6.1");
-user_pref("privacy.resistFingerprinting", true);
+
 
 
 
@@ -82,6 +73,17 @@ user_pref("beacon.enabled", false);
  * SECTION: Firefox features and components                         *
  ******************************************************************************/
 
+
+// SETTING: Enable Firefox's anti-fingerprinting mode ("resist fingerprinting" or RFP) (Tor Uplift project)
+// https://wiki.mozilla.org/Security/Fingerprinting
+// NOTE: This spoofs the time zone, the locale, and disables numerous other browser features
+// NOTE: This supersedes some other spoofing settings, e.g.:
+//		user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; rv:60.0) Gecko/20100101 Firefox/60.0";
+//		user_pref("general.appname.override",	"Netscape");
+//		user_pref("general.appversion.override", "5.0 (Windows)");
+//		user_pref("general.platform.override", "Win32");
+//		user_pref("general.oscpu.override", "Windows NT 6.1");
+user_pref("privacy.resistFingerprinting", true);
 
 
 // SETTING: Enable tracking protection
