@@ -122,3 +122,15 @@ user_pref("devtools.debugger.remote-enabled", false);
 user_pref("devtools.chrome.enabled", false);
 user_pref("devtools.debugger.force-local", true);
 user_pref("devtools.debugger.prompt-connection", true);
+
+
+
+
+
+/******************************************************************************
+ * SECTION: Automatic connections                                             *
+ ******************************************************************************/
+// SETTING: Disable network prefetching
+// http://kb.mozillazine.org/Network.prefetch-next
+// https://developer.mozilla.org/en-US/docs/Web/HTTP/Link_prefetching_FAQ#Privacy_implications
+user_pref("network.prefetch-next", false);
