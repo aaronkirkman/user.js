@@ -100,7 +100,6 @@ user_pref("privacy.trackingprotection.pbmode.enabled", true);
 user_pref("privacy.userContext.enabled", true);
 
 
-
 // SETTING: Disable telemetry
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
