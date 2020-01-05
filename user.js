@@ -86,8 +86,24 @@ user_pref("privacy.trackingprotection.pbmode.enabled", true);
 
 
 /******************************************************************************
- * SECTION: Firefox features and components                                   *
+ * SECTION: Firefox features and components                         *
  ******************************************************************************/
+
+
+
+// SETTING: Enable tracking protection
+// NOTE: Now called "content blocking" or "enhanced tracking protection"
+// https://support.mozilla.org/en-US/kb/what-happened-tracking-protection
+// https://support.mozilla.org/en-US/kb/content-blocking
+user_pref("privacy.trackingprotection.enabled", true);
+user_pref("privacy.trackingprotection.pbmode.enabled", true);
+
+
+// SETTING: Enable contextual identity Containers
+// NOTE: Containers are not available in Private Browsing mode
+// https://wiki.mozilla.org/Security/Contextual_Identity_Project/Containers
+user_pref("privacy.userContext.enabled", true);
+
 
 
 // SETTING: Disable telemetry
