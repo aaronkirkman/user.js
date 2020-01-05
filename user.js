@@ -98,7 +98,27 @@ user_pref("experiments.supported", false);
 user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
 
+
 // SETTING: Disable recommended extensions
 // https://support.mozilla.org/en-US/kb/extension-recommendations
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false)
+
+
+// SETTING: Disable WebIDE
+// https://trac.torproject.org/projects/tor/ticket/16222
+// https://developer.mozilla.org/docs/Tools/WebIDE
+user_pref("devtools.webide.enabled", false);
+user_pref("devtools.webide.autoinstallADBHelper", false);
+user_pref("devtools.webide.autoinstallFxdtAdapters", false);
+user_pref("devtools.webide.autoConnectRuntime", false);
+user_pref("devtools.webide.autoinstallADBExtension", false);
+
+
+// SETTING: Disable remote debugging
+// https://developer.mozilla.org/en-US/docs/Tools/Remote_Debugging/Debugging_Firefox_Desktop
+// https://developer.mozilla.org/en-US/docs/Archive/Mozilla/Remote_debugging/Firefox_for_Metro
+user_pref("devtools.debugger.remote-enabled", false);
+user_pref("devtools.chrome.enabled", false);
+user_pref("devtools.debugger.force-local", true);
+user_pref("devtools.debugger.prompt-connection", true);
