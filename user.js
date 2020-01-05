@@ -36,13 +36,7 @@ user_pref("keyword.enabled", true);
 user_pref("privacy.resistFingerprinting", true);
 
 
-// SETTING: Disable telemetry
-user_pref("toolkit.telemetry.enabled", false);
-user_pref("toolkit.telemetry.unified", false);
-user_pref("toolkit.telemetry.archive.enabled", false);
-user_pref("experiments.supported", false);
-user_pref("experiments.enabled", false);
-user_pref("experiments.manifest.uri", "");
+
 
 
 // SETTING: Disallow Necko to do A/B testing
@@ -88,3 +82,18 @@ user_pref("beacon.enabled", false);
 // https://support.mozilla.org/en-US/kb/tracking-protection-pbm
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.pbmode.enabled", true);
+
+
+
+/******************************************************************************
+ * SECTION: Firefox features and components                                   *
+ ******************************************************************************/
+
+
+// SETTING: Disable telemetry
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.unified", false);
+user_pref("toolkit.telemetry.archive.enabled", false);
+user_pref("experiments.supported", false);
+user_pref("experiments.enabled", false);
+user_pref("experiments.manifest.uri", "");
