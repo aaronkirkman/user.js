@@ -112,6 +112,9 @@ user_pref("beacon.enabled", false);
 // NOTE: If this setting is enabled, the list of add-ons is sent to Mozilla once a day
 user_pref("extensions.getAddons.cache.enabled", false);
 
+// SETTING: Disable theme updates
+user_pref("lightweightThemes.update.enabled", false);
+
 
 /******************************************************************************
  * SECTION: Firefox features and components                                   *
