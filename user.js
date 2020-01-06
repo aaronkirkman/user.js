@@ -157,6 +157,7 @@ user_pref("browser.discovery.enabled", false);
 // https://trac.torproject.org/projects/tor/ticket/19047
 user_pref("browser.selfsupport.url", "");
 
+
 // SETTING: Disable metrics/data collection for Firefox Hello
 // https://groups.google.com/d/topic/mozilla.dev.platform/nyVkCx-_sFw/discussion
 user_pref("loop.logDomains", false);
