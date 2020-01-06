@@ -103,6 +103,16 @@ user_pref("beacon.enabled", false);
 
 
 
+
+/******************************************************************************
+ * SECTION: Miscellaneous privacy and fingerprinting settings                 *
+ ******************************************************************************/
+// SETTING: Opt out of add-on metadata updates
+// https://blog.mozilla.org/addons/how-to-opt-out-of-add-on-metadata-updates/
+// NOTE: If this setting is enabled, the list of add-ons is sent to Mozilla once a day
+user_pref("extensions.getAddons.cache.enabled", false);
+
+
 /******************************************************************************
  * SECTION: Firefox features and components                                   *
  ******************************************************************************/
