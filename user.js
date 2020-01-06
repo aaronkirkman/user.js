@@ -5,6 +5,12 @@ user_pref("general.warnOnAboutConfig", false);
 /******************************************************************************
  * SECTION: Extensions and plugins                                            *
  ******************************************************************************/
+// SETTING: Enable click to play for plugins
+// https://wiki.mozilla.org/Firefox/Click_To_Play
+// https://blog.mozilla.org/security/2012/10/11/click-to-play-plugins-blocklist-style/
+user_pref("plugins.click_to_play", true);
+
+
 // SETTING: Disable the Flash Player NPAPI plugin
 // http://kb.mozillazine.org/Flash_plugin
 user_pref("plugin.state.flash", 0);
