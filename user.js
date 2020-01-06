@@ -179,7 +179,7 @@ user_pref("browser.safebrowsing.malware.enabled", true);
 // SETTING: Disable querying Google Application Reputation database for downloaded binary files
 // https://www.mozilla.org/en-US/firefox/39.0/releasenotes/
 // https://wiki.mozilla.org/Security/Application_Reputation
-user_pref("browser.safebrowsing.downloads.remote.enabled",	false);
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 
 
 // SETTING: Disable SHIELD and opt-out of Firefox studies
