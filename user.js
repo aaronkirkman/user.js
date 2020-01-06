@@ -168,6 +168,11 @@ user_pref("loop.logDomains", false);
 user_pref("browser.safebrowsing.enabled", true); // Firefox < 50
 user_pref("browser.safebrowsing.phishing.enabled", true); // firefox >= 50
 
+
+// SETTING: Enable blocking reported attack sites
+// http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled
+user_pref("browser.safebrowsing.malware.enabled", true);
+
 /******************************************************************************
  * SECTION: Automatic connections                                             *
  ******************************************************************************/
