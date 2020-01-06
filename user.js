@@ -175,6 +175,12 @@ user_pref("browser.safebrowsing.phishing.enabled", true); // firefox >= 50
 // http://kb.mozillazine.org/Browser.safebrowsing.malware.enabled
 user_pref("browser.safebrowsing.malware.enabled", true);
 
+
+// SETTING: Disable querying Google Application Reputation database for downloaded binary files
+// https://www.mozilla.org/en-US/firefox/39.0/releasenotes/
+// https://wiki.mozilla.org/Security/Application_Reputation
+user_pref("browser.safebrowsing.downloads.remote.enabled",	false);
+
 /******************************************************************************
  * SECTION: Automatic connections                                             *
  ******************************************************************************/
