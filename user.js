@@ -189,6 +189,16 @@ user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 
 
+
+/******************************************************************************
+ * SECTION: Interface                                                         *
+ ******************************************************************************/
+// SETTING: Disable favicons in bookmarks
+user_pref("browser.shell.shortcutFavicons", false);
+user_pref("browser.chrome.site_icons", false);
+user_pref("alerts.showFavicons", false);
+
+
 /******************************************************************************
  * SECTION: Firefox features and components                                   *
  ******************************************************************************/
