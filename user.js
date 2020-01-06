@@ -2,6 +2,33 @@
 user_pref("general.warnOnAboutConfig", false);
 
 
+/******************************************************************************
+ * SECTION: Extensions and plugins                                            *
+ ******************************************************************************/
+// SETTING: Disable the Flash Player NPAPI plugin
+// http://kb.mozillazine.org/Flash_plugin
+user_pref("plugin.state.flash", 0);
+
+
+// SETTING: Disable sending Flash Player crash reports
+user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
+
+
+// SETTING: If Flash Player crash reports are enabled, don't send the URL in the crash report
+user_pref("dom.ipc.plugins.reportCrashURL", false);
+
+
+// SETTING: If Flash is enabled, download and use Mozilla SWF URIs blocklist
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1237198
+// https://github.com/mozilla-services/shavar-plugin-blocklist
+user_pref("browser.safebrowsing.blockedURIs.enabled", true);
+
+
+// SETTING: Disable Mozilla's Flash renderer, Shumway
+// https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Shumway
+user_pref("shumway.disabled", true);
+
+
 // SETTING: Disable User Timing API, which stores high-resolution (milliseconds to microseconds) timestamps
 // https://trac.torproject.org/projects/tor/ticket/16336
 // https://www.w3.org/TR/2013/REC-user-timing-20131212/#privacy-security
