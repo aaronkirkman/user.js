@@ -140,6 +140,27 @@ user_pref("browser.pocket.enabled",	 false);
 user_pref("extensions.pocket.enabled", false);
 
 
+// SETTING: Disable collection/sending of the health report (healthreport.sqlite*)
+// https://support.mozilla.org/en-US/kb/firefox-health-report-understand-your-browser-perf
+// https://gecko.readthedocs.org/en/latest/toolkit/components/telemetry/telemetry/preferences.html
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.healthreport.service.enabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled",	false);
+
+
+// SETTING: Disable "Allow Firefox to make personalized extension recommendations"
+user_pref("browser.discovery.enabled", false);
+
+
+// SETTING: Disable Heartbeat  (Mozilla user rating telemetry)
+// https://wiki.mozilla.org/Advocacy/heartbeat
+// https://trac.torproject.org/projects/tor/ticket/19047
+user_pref("browser.selfsupport.url", "");
+
+// SETTING: Disable metrics/data collection for Firefox Hello
+// https://groups.google.com/d/topic/mozilla.dev.platform/nyVkCx-_sFw/discussion
+user_pref("loop.logDomains", false);
+
 
 
 
