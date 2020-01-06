@@ -181,6 +181,13 @@ user_pref("browser.safebrowsing.malware.enabled", true);
 // https://wiki.mozilla.org/Security/Application_Reputation
 user_pref("browser.safebrowsing.downloads.remote.enabled",	false);
 
+
+// SETTING: Disable SHIELD and opt-out of Firefox studies
+// https://support.mozilla.org/en-US/kb/shield
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1370801
+user_pref("extensions.shield-recipe-client.enabled", false);
+user_pref("app.shield.optoutstudies.enabled", false);
+
 /******************************************************************************
  * SECTION: Automatic connections                                             *
  ******************************************************************************/
