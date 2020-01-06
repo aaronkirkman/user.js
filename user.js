@@ -32,6 +32,9 @@ user_pref("shumway.disabled", true);
 // SETTING: Disable Java NPAPI plugin
 user_pref("plugin.state.java", 0);
 
+// SETTING: Disable the Gnome Shell Integration NPAPI plugin
+user_pref("plugin.state.libgnome-shell-browser-plugin", 0);
+
 
 // SETTING: Disable User Timing API, which stores high-resolution (milliseconds to microseconds) timestamps
 // https://trac.torproject.org/projects/tor/ticket/16336
