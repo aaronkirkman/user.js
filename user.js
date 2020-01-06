@@ -101,7 +101,74 @@ user_pref("browser.uitour.enabled", false);
 user_pref("beacon.enabled", false);
 
 
+/******************************************************************************
+ * SECTION: History and caching                                               *
+ ******************************************************************************/
+// SETTING: Permanently enable private browsing mode
+// https://wiki.mozilla.org/PrivateBrowsing
+// https://support.mozilla.org/en-US/kb/Private-Browsing
+// NOTE: This will disable the "Containers" functionality
+user_pref("browser.privatebrowsing.autostart",			true);
 
+
+// SETTING: Do not download URLs for the offline cache
+// http://kb.mozillazine.org/Browser.cache.offline.enable
+user_pref("browser.cache.offline.enable",			false);
+
+// SETTING: Clear history when Firefox closes
+// https://support.mozilla.org/en-US/kb/Clear%20Recent%20History#w_how-do-i-make-firefox-clear-my-history-automatically
+user_pref("privacy.sanitize.sanitizeOnShutdown",		true);
+user_pref("privacy.clearOnShutdown.cache",			true);
+user_pref("privacy.clearOnShutdown.cookies",			true);
+user_pref("privacy.clearOnShutdown.downloads",			true);
+user_pref("privacy.clearOnShutdown.formdata",			true);
+user_pref("privacy.clearOnShutdown.history",			true);
+user_pref("privacy.clearOnShutdown.offlineApps",		true);
+user_pref("privacy.clearOnShutdown.sessions",			true);
+user_pref("privacy.clearOnShutdown.openWindows",		true);
+
+// SETTING: Set time range to "Everything" as default in "Clear Recent History"
+user_pref("privacy.sanitize.timeSpan", 0);
+
+// SETTING: Clear everything in "Clear Recent History"
+user_pref("privacy.cpd.cache", true);
+user_pref("privacy.cpd.cookies", true);
+user_pref("privacy.cpd.downloads", true);
+user_pref("privacy.cpd.formdata", true);
+user_pref("privacy.cpd.offlineApps", true);
+user_pref("privacy.cpd.history", true);
+user_pref("privacy.cpd.sessions", true);
+user_pref("privacy.cpd.siteSettings", true);
+
+// SETTING: Don't remember browsing history
+user_pref("places.history.enabled", false);
+
+
+// SETTING: Disable disk cache
+// http://kb.mozillazine.org/Browser.cache.disk.enable
+user_pref("browser.cache.disk.enable", false);
+
+
+// SETTING: Disable Caching of SSL Pages
+// http://kb.mozillazine.org/Browser.cache.disk_cache_ssl
+user_pref("browser.cache.disk_cache_ssl", false);
+
+
+// SETTING: Disable download history
+user_pref("browser.download.manager.retention", 0);
+
+
+// SETTING: Disable built-in password manager
+user_pref("signon.rememberSignons",	false);
+
+
+// SETTING: Disable form autofill, don't save information entered in web page forms and the Search Bar
+user_pref("browser.formfill.enable", false);
+
+
+// SETTING: Cookies expires at the end of the session (when the browser closes)
+// http://kb.mozillazine.org/Network.cookie.lifetimePolicy#2
+user_pref("network.cookie.lifetimePolicy", 2);
 
 
 /******************************************************************************
