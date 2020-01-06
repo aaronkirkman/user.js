@@ -162,7 +162,11 @@ user_pref("browser.selfsupport.url", "");
 user_pref("loop.logDomains", false);
 
 
-
+// SETTING: Enable safe browsing/blocking reported web forgeries
+// https://wiki.mozilla.org/Security/Safe_Browsing
+// http://kb.mozillazine.org/Safe_browsing
+user_pref("browser.safebrowsing.enabled", true); // Firefox < 50
+user_pref("browser.safebrowsing.phishing.enabled", true); // firefox >= 50
 
 /******************************************************************************
  * SECTION: Automatic connections                                             *
