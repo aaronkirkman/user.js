@@ -134,10 +134,11 @@ user_pref("devtools.debugger.force-local", true);
 user_pref("devtools.debugger.prompt-connection", true);
 
 
-// SETTING: Disable Pocket
+// SETTING: Disable Pocket and "Recommended by Pocket"
 // https://support.mozilla.org/en-US/kb/save-web-pages-later-pocket-firefox
 user_pref("browser.pocket.enabled",	 false);
 user_pref("extensions.pocket.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 
 
 // SETTING: Disable collection/sending of the health report (healthreport.sqlite*)
